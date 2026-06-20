@@ -1,5 +1,7 @@
 Flask
 requests
+python-dotenv
 pycryptodome
 protobuf
-python-dotenv
+urllib3
+gunicorn

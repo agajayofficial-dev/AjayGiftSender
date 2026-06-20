@@ -158,5 +158,6 @@ def send_gift():
             return jsonify({"success": False, "message": err})
     except Exception as e: return jsonify({"success": False, "message": str(e)})
 
-if __name__ == '__main__':
-    app.run(port=8080)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port))
